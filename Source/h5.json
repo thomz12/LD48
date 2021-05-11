@@ -1,0 +1,41 @@
+﻿{
+  // Output both minified and non-minified. 
+  // Minified should be used for released products.
+  "outputFormatting": "Both",
+
+  // Enable browser debugging of C# files.
+  // Default is false.
+  "sourceMap": {
+    "enabled": false
+  },
+
+  // Set to true to disable Reflection metadata generation.
+  // Default is false.
+  "reflection": {
+    "disabled": false
+  },
+
+  // Delete everything from the output folder
+  // Default is false
+  "cleanOutputFolderBeforeBuild": true,
+
+  // Automatically generate an index.html file
+  // and add the file to the output directory.
+  // Default is false.
+  "html": {
+    "disabled": true
+  },
+
+  // Rules to manage generated JavaScript syntax.
+  // Default is "Managed"
+  "rules": {
+    "anonymousType": "Plain",
+    "arrayIndex": "Plain",
+    "autoProperty": "Plain",
+    "boxing": "Plain",
+    "externalCast": "Plain",
+    "inlineComment": "Plain",
+    "integer": "Managed",
+    "lambda": "Plain"
+  }
+}

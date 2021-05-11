@@ -1,0 +1,16 @@
+<Project Sdk="h5.Target/0.0.13615">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+	<ItemGroup>
+    <PackageReference Include="h5" Version="0.0.13619" />
+    <PackageReference Include="h5.core" Version="0.0.16402" />
+    <PackageReference Include="h5.howler" Version="0.0.16985" />
+    <PackageReference Include="h5.p2" Version="0.0.16894" />
+		<PackageReference Include="Juicebox" Version="0.2.1" />
+  </ItemGroup>
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="xcopy /y /s $(ProjectDir)GameResources $(TargetDir)h5" />
+	</Target>
+</Project>
